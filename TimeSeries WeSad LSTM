@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "d311d366",
+   "id": "e11a4fd2",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2025-09-12T12:35:02.030645Z",
-     "iopub.status.busy": "2025-09-12T12:35:02.030212Z",
-     "iopub.status.idle": "2025-09-12T12:35:04.246002Z",
-     "shell.execute_reply": "2025-09-12T12:35:04.244820Z"
+     "iopub.execute_input": "2025-09-12T12:33:26.076180Z",
+     "iopub.status.busy": "2025-09-12T12:33:26.075246Z",
+     "iopub.status.idle": "2025-09-12T12:33:27.999220Z",
+     "shell.execute_reply": "2025-09-12T12:33:27.998093Z"
     },
     "papermill": {
-     "duration": 2.221136,
-     "end_time": "2025-09-12T12:35:04.247751",
+     "duration": 1.9293,
+     "end_time": "2025-09-12T12:33:28.000831",
      "exception": false,
-     "start_time": "2025-09-12T12:35:02.026615",
+     "start_time": "2025-09-12T12:33:26.071531",
      "status": "completed"
     },
     "tags": []
@@ -68,13 +68,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d8c67c07",
+   "id": "075b492b",
    "metadata": {
     "papermill": {
-     "duration": 0.002118,
-     "end_time": "2025-09-12T12:35:04.252753",
+     "duration": 0.001828,
+     "end_time": "2025-09-12T12:33:28.004915",
      "exception": false,
-     "start_time": "2025-09-12T12:35:04.250635",
+     "start_time": "2025-09-12T12:33:28.003087",
      "status": "completed"
     },
     "tags": []
@@ -86,19 +86,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "6d74b7b9",
+   "id": "458df6d6",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-09-12T12:35:04.259376Z",
-     "iopub.status.busy": "2025-09-12T12:35:04.258750Z",
-     "iopub.status.idle": "2025-09-12T13:21:32.221050Z",
-     "shell.execute_reply": "2025-09-12T13:21:32.218696Z"
+     "iopub.execute_input": "2025-09-12T12:33:28.010414Z",
+     "iopub.status.busy": "2025-09-12T12:33:28.009929Z",
+     "iopub.status.idle": "2025-09-12T13:25:58.461183Z",
+     "shell.execute_reply": "2025-09-12T13:25:58.459247Z"
     },
     "papermill": {
-     "duration": 2788.41578,
-     "end_time": "2025-09-12T13:21:32.670557",
+     "duration": 3150.459957,
+     "end_time": "2025-09-12T13:25:58.466636",
      "exception": false,
-     "start_time": "2025-09-12T12:35:04.254777",
+     "start_time": "2025-09-12T12:33:28.006679",
      "status": "completed"
     },
     "tags": []
@@ -108,10 +108,10 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2025-09-12 12:35:08.907253: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
+      "2025-09-12 12:33:31.627219: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered\n",
       "WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n",
-      "E0000 00:00:1757680509.208560      13 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
-      "E0000 00:00:1757680509.288982      13 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"
+      "E0000 00:00:1757680411.868699      13 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered\n",
+      "E0000 00:00:1757680411.944305      13 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered\n"
      ]
     },
     {
@@ -128,78 +128,78 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
-      "2025-09-12 12:37:24.661264: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)\n"
+      "2025-09-12 12:36:16.827756: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "  AUC=0.997 | F1(stress)=0.698 | P=1.000 R=0.537\n",
+      "  AUC=0.996 | F1(stress)=0.610 | P=1.000 R=0.439\n",
       "\n",
       "=== Test: S3 ===\n",
       "  Train windows: 1770 | Test windows: 144 | Pos.rate(train)=0.302\n",
-      "  AUC=0.863 | F1(stress)=0.639 | P=0.494 R=0.907\n",
+      "  AUC=0.873 | F1(stress)=0.645 | P=0.500 R=0.907\n",
       "\n",
       "=== Test: S4 ===\n",
       "  Train windows: 1770 | Test windows: 144 | Pos.rate(train)=0.302\n",
-      "  AUC=1.000 | F1(stress)=0.683 | P=0.518 R=1.000\n",
+      "  AUC=1.000 | F1(stress)=0.977 | P=0.956 R=1.000\n",
       "\n",
       "=== Test: S5 ===\n",
       "  Train windows: 1766 | Test windows: 148 | Pos.rate(train)=0.302\n",
-      "  AUC=0.825 | F1(stress)=0.761 | P=0.964 R=0.628\n",
+      "  AUC=0.977 | F1(stress)=0.932 | P=0.911 R=0.953\n",
       "\n",
       "=== Test: S6 ===\n",
       "  Train windows: 1767 | Test windows: 147 | Pos.rate(train)=0.302\n",
-      "  AUC=0.912 | F1(stress)=0.667 | P=0.500 R=1.000\n",
+      "  AUC=0.732 | F1(stress)=0.647 | P=0.478 R=1.000\n",
       "\n",
       "=== Test: S7 ===\n",
       "  Train windows: 1767 | Test windows: 147 | Pos.rate(train)=0.302\n",
-      "  AUC=0.999 | F1(stress)=0.597 | P=0.426 R=1.000\n",
+      "  AUC=1.000 | F1(stress)=0.619 | P=0.448 R=1.000\n",
       "\n",
       "=== Test: S9 ===\n",
       "  Train windows: 1768 | Test windows: 146 | Pos.rate(train)=0.302\n",
-      "  AUC=0.994 | F1(stress)=0.754 | P=1.000 R=0.605\n",
+      "  AUC=0.985 | F1(stress)=0.208 | P=1.000 R=0.116\n",
       "\n",
       "=== Test: S10 ===\n",
       "  Train windows: 1762 | Test windows: 152 | Pos.rate(train)=0.300\n",
-      "  AUC=0.907 | F1(stress)=0.580 | P=1.000 R=0.408\n",
+      "  AUC=0.814 | F1(stress)=0.701 | P=0.964 R=0.551\n",
       "\n",
       "=== Test: S13 ===\n",
       "  Train windows: 1765 | Test windows: 149 | Pos.rate(train)=0.302\n",
-      "  AUC=1.000 | F1(stress)=0.880 | P=0.786 R=1.000\n",
+      "  AUC=1.000 | F1(stress)=0.917 | P=0.846 R=1.000\n",
       "\n",
       "=== Test: S14 ===\n",
       "  Train windows: 1765 | Test windows: 149 | Pos.rate(train)=0.301\n",
-      "  AUC=0.000 | F1(stress)=0.307 | P=0.206 R=0.600\n",
+      "  AUC=0.625 | F1(stress)=0.000 | P=0.000 R=0.000\n",
       "\n",
       "=== Test: S15 ===\n",
       "  Train windows: 1765 | Test windows: 149 | Pos.rate(train)=0.301\n",
-      "  AUC=1.000 | F1(stress)=0.786 | P=0.648 R=1.000\n",
+      "  AUC=1.000 | F1(stress)=0.905 | P=1.000 R=0.826\n",
       "\n",
       "=== Test: S16 ===\n",
       "  Train windows: 1766 | Test windows: 148 | Pos.rate(train)=0.301\n",
-      "  AUC=0.998 | F1(stress)=0.989 | P=0.978 R=1.000\n",
+      "  AUC=1.000 | F1(stress)=1.000 | P=1.000 R=1.000\n",
       "\n",
       "=== Test: S17 ===\n",
       "  Train windows: 1764 | Test windows: 150 | Pos.rate(train)=0.300\n",
-      "  AUC=0.931 | F1(stress)=0.485 | P=0.320 R=1.000\n",
+      "  AUC=0.154 | F1(stress)=0.485 | P=0.320 R=1.000\n",
       "\n",
       "=== LOSO Summary ===\n",
       "test_subject      auc  precision_pos  recall_pos   f1_pos  support_pos\n",
-      "         S10 0.907470       1.000000    0.408163 0.579710           49\n",
-      "         S13 1.000000       0.785714    1.000000 0.880000           44\n",
-      "         S14 0.000000       0.206107    0.600000 0.306818           45\n",
-      "         S15 1.000000       0.647887    1.000000 0.786325           46\n",
-      "         S16 0.998490       0.978261    1.000000 0.989011           45\n",
-      "         S17 0.931168       0.320000    1.000000 0.484848           48\n",
-      "          S2 0.997317       1.000000    0.536585 0.698413           41\n",
-      "          S3 0.862998       0.493671    0.906977 0.639344           43\n",
-      "          S4 1.000000       0.518072    1.000000 0.682540           43\n",
-      "          S5 0.825471       0.964286    0.627907 0.760563           43\n",
-      "          S6 0.911739       0.500000    1.000000 0.666667           44\n",
-      "          S7 0.998658       0.425743    1.000000 0.597222           43\n",
-      "          S9 0.994355       1.000000    0.604651 0.753623           43\n"
+      "         S10 0.813553       0.964286    0.551020 0.701299           49\n",
+      "         S13 1.000000       0.846154    1.000000 0.916667           44\n",
+      "         S14 0.624786       0.000000    0.000000 0.000000           45\n",
+      "         S15 1.000000       1.000000    0.826087 0.904762           46\n",
+      "         S16 1.000000       1.000000    1.000000 1.000000           45\n",
+      "         S17 0.153799       0.320000    1.000000 0.484848           48\n",
+      "          S2 0.996098       1.000000    0.439024 0.610169           41\n",
+      "          S3 0.873129       0.500000    0.906977 0.644628           43\n",
+      "          S4 1.000000       0.955556    1.000000 0.977273           43\n",
+      "          S5 0.977187       0.911111    0.953488 0.931818           43\n",
+      "          S6 0.732348       0.478261    1.000000 0.647059           44\n",
+      "          S7 1.000000       0.447917    1.000000 0.618705           43\n",
+      "          S9 0.985324       1.000000    0.116279 0.208333           43\n"
      ]
     }
    ],
@@ -493,14 +493,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 2799.127301,
-   "end_time": "2025-09-12T13:21:35.419633",
+   "duration": 3160.581301,
+   "end_time": "2025-09-12T13:26:01.212388",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-09-12T12:34:56.292332",
+   "start_time": "2025-09-12T12:33:20.631087",
    "version": "2.6.0"
   }
  },
